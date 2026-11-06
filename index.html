@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="zh-TW" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>姚權庭 (Weiss Yao) - 高階 TPM / PM Cyberpunk 互動履歷 | Realtek 專屬頁面</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        cyber: {
+                            black: '#030712',
+                            dark: '#050B14',
+                            card: '#0A1424',
+                            border: '#1E293B',
+                            accent: '#00F3FF',
+                            neon: '#00FF88',
+                            purple: '#A855F7',
+                            gold: '#FFB800'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                        tech: ['Chakra Petch', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #030712;
+            color: #94A3B8;
+            font-family: 'Inter', sans-serif;
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(0, 243, 255, 0.08) 0%, transparent 60%),
+                radial-gradient(circle at 85% 30%, rgba(0, 255, 136, 0.05) 0%, transparent 50%);
+        }
+        .circuit-bg {
+            background-image: radial-gradient(rgba(0, 243, 255, 0.15) 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .neon-border-cyan {
+            border: 1px solid rgba(0, 243, 255, 0.3);
+            box-shadow: 0 0 15px rgba(0, 243, 255, 0.1);
+        }
+        .neon-border-cyan:hover {
+            border-color: #00F3FF;
+            box-shadow: 0 0 25px rgba(0, 243, 255, 0.25);
+        }
+        .neon-text-cyan {
+            color: #00F3FF;
+            text-shadow: 0 0 8px rgba(0, 243, 255, 0.5);
+        }
+        .neon-text-green {
+            color: #00FF88;
+            text-shadow: 0 0 8px rgba(0, 255, 136, 0.5);
+        }
+        .tab-btn.active {
+            color: #00F3FF;
+            border-bottom: 2px solid #00F3FF;
+            background: linear-gradient(180deg, transparent, rgba(0, 243, 255, 0.1));
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
+        ::-webkit-scrollbar-track { background: #030712; }
+        ::-webkit-scrollbar-thumb { background: #1E293B; border-radius: 3px; }
+        ::-webkit-scrollbar-thumb:hover { background: #00F3FF; }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col circuit-bg selection:bg-cyber-accent selection:text-cyber-black">
+
+    <!-- Top Futuristic Header -->
+    <header class="sticky top-0 z-40 bg-cyber-dark/90 backdrop-blur-md border-b border-cyber-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded bg-cyber-accent/10 border border-cyber-accent flex items-center justify-center font-tech font-bold text-cyber-accent text-xl shadow-[0_0_10px_rgba(0,243,255,0.3)]">
+                    WY
+                </div>
+                <div>
+                    <h1 class="text-base sm:text-lg font-bold font-tech text-white tracking-wide">姚權庭 (WEISS YAO)</h1>
+                    <p class="text-xs font-mono text-cyber-accent flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-cyber-neon animate-pulse"></span>
+                        TPM / PM CANDIDATE @ REALTEK
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8">
+
+        <!-- Executive Hero HUD Card -->
+        <section class="relative bg-cyber-card rounded-xl border border-cyber-border p-6 sm:p-8 neon-border-cyan overflow-hidden transition-all">
+            <!-- Background Chip Circuit Accent -->
+            <div class="absolute top-0 right-0 w-96 h-96 bg-cyber-accent/5 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
+
+            <div class="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+                <!-- Left Details -->
+                <div class="space-y-4 max-w-3xl">
+                    <div class="flex flex-wrap items-center gap-2">
+                        <span class="px-3 py-1 rounded text-xs font-mono bg-cyber-accent/10 text-cyber-accent border border-cyber-accent/40 font-semibold">
+                            14-15 年傳動研發 & NPI 全流程控管
+                        </span>
+                        <span class="px-3 py-1 rounded text-xs font-mono bg-slate-800 text-slate-200 border border-slate-700">
+                            傳誠技研 (DTS) 技術經理
+                        </span>
+                        <span class="px-3 py-1 rounded text-xs font-mono bg-amber-500/10 text-amber-300 border border-amber-500/40">
+                            <i class="fa-solid fa-award mr-1"></i>乙級熱處理技術士認證
+                        </span>
+                    </div>
+
+                    <h2 class="text-2xl sm:text-4xl font-extrabold font-tech text-white tracking-wide">
+                        技術產品經理 (TPM) / 產品經理 (PM)
+                    </h2>
+
+                    <!-- Golden Motto Banner -->
+                    <div class="p-3.5 rounded bg-cyber-dark/80 border-l-4 border-cyber-accent text-cyber-accent font-mono text-sm font-bold flex items-center gap-2">
+                        <i class="fa-solid fa-terminal text-cyber-neon"></i>
+                        <span>「講得懂工程語言、看得懂硬體風險、做得出時程交付。」</span>
+                    </div>
+
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        精通傳動系統、精密金屬製程（連續沖壓、CNC、鍛造）與高階熱處理工藝。主導產品從 <strong class="text-white">Concept 規格定義、NPI 開模試作、專利 ECO 風控至批量量產</strong>。成功對接並打入 <span class="text-cyber-accent font-semibold">Bosch、DJI 大疆、Tektro 彥豪、KMC 桂盟、woom</span> 及 <span class="text-cyber-accent font-semibold">Classified</span> 跨國 Tier-1 生態圈。
+                    </p>
+
+                    <!-- Contact Bar -->
+                    <div class="flex flex-wrap gap-4 text-xs font-mono text-slate-400 pt-3 border-t border-cyber-border">
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-location-dot text-cyber-accent"></i> 台中市南區</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-phone text-cyber-accent"></i> 0982-091-210</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-envelope text-cyber-accent"></i> lookstarwish@gmail.com</span>
+                        <span class="flex items-center gap-1.5"><i class="fa-solid fa-graduation-cap text-cyber-accent"></i> 中興大學機械碩肄 / 南台科大畢</span>
+                    </div>
+                </div>
+
+                <!-- Right HUD Stats Counter Matrix -->
+                <div class="grid grid-cols-2 gap-3 w-full lg:w-80 shrink-0 font-tech">
+                    <div class="bg-cyber-dark/90 p-4 rounded-lg border border-cyber-border text-center hover:border-cyber-accent/50 transition-all">
+                        <div class="text-3xl font-extrabold text-cyber-accent neon-text-cyan">20+</div>
+                        <div class="text-xs text-slate-400 font-mono mt-1">跨國專利 (TW/US/EU等7國)</div>
+                    </div>
+                    <div class="bg-cyber-dark/90 p-4 rounded-lg border border-cyber-border text-center hover:border-cyber-accent/50 transition-all">
+                        <div class="text-3xl font-extrabold text-cyber-neon neon-text-green">&lt;0.25mm</div>
+                        <div class="text-xs text-slate-400 font-mono mt-1">熱處理形變精準控制</div>
+                    </div>
+                    <div class="bg-cyber-dark/90 p-4 rounded-lg border border-cyber-border text-center hover:border-cyber-accent/50 transition-all">
+                        <div class="text-3xl font-extrabold text-cyber-gold">6+</div>
+                        <div class="text-xs text-slate-400 font-mono mt-1">Tier-1 生態系對接</div>
+                    </div>
+                    <div class="bg-cyber-dark/90 p-4 rounded-lg border border-cyber-border text-center hover:border-cyber-accent/50 transition-all">
+                        <div class="text-3xl font-extrabold text-purple-400">100%</div>
+                        <div class="text-xs text-slate-400 font-mono mt-1">NPI 開發時程交付率</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation Tabs -->
+        <div class="border-b border-cyber-border flex space-x-2 overflow-x-auto text-sm font-mono scrollbar-none">
+            <button onclick="switchTab('summary')" id="tab-summary" class="tab-btn active px-4 py-3 font-semibold transition-all flex items-center space-x-2 shrink-0">
+                <i class="fa-solid fa-cpu text-cyber-accent"></i>
+                <span>Executive Summary (核心優勢)</span>
+            </button>
+            <button onclick="switchTab('projects')" id="tab-projects" class="tab-btn px-4 py-3 font-semibold transition-all flex items-center space-x-2 shrink-0">
+                <i class="fa-solid fa-diagram-project text-cyber-accent"></i>
+                <span>四大戰略專案 (含實體影音超連結)</span>
+            </button>
+            <button onclick="switchTab('patents')" id="tab-patents" class="tab-btn px-4 py-3 font-semibold transition-all flex items-center space-x-2 shrink-0">
+                <i class="fa-solid fa-shield-halved text-cyber-accent"></i>
+                <span>全球 7 國智財專利護城河 (20+ 案)</span>
+            </button>
+            <button onclick="switchTab('autobio')" id="tab-autobio" class="tab-btn px-4 py-3 font-semibold transition-all flex items-center space-x-2 shrink-0">
+                <i class="fa-regular fa-file-code text-cyber-accent"></i>
+                <span>自傳與 Realtek 戰略對接</span>
+            </button>
+        </div>
+
+        <!-- TAB CONTENT 1: EXECUTIVE SUMMARY -->
+        <section id="content-summary" class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- PM/TPM Skills -->
+                <div class="bg-cyber-card p-6 rounded-xl border border-cyber-border space-y-4">
+                    <h3 class="text-lg font-bold text-white border-b border-cyber-border pb-3 flex items-center justify-between font-tech">
+                        <span><i class="fa-solid fa-sliders text-cyber-accent mr-2"></i>PM / TPM 核心管理專業</span>
+                        <span class="text-xs font-mono text-cyber-accent">CORE CAPABILITIES</span>
+                    </h3>
+                    <div class="space-y-3 font-mono text-xs">
+                        <div class="p-3 rounded bg-cyber-dark/80 border border-cyber-border">
+                            <h4 class="font-bold text-cyber-accent text-sm mb-1"><i class="fa-solid fa-bars-progress mr-1.5"></i>NPI 里程碑 (Milestones) 控管</h4>
+                            <p class="text-slate-400">主導 Concept 產品定義、Prototype 試作、沖壓模具開發 (T0-Tn)、FAI 檢驗至 SOP 批量量產。</p>
+                        </div>
+                        <div class="p-3 rounded bg-cyber-dark/80 border border-cyber-border">
+                            <h4 class="font-bold text-cyber-neon text-sm mb-1"><i class="fa-solid fa-handshake mr-1.5"></i>跨國 Tier-1 生態圈與客戶對接</h4>
+                            <p class="text-slate-400">精準介面匹配，成功將傳動與飛輪組件導入 Bosch、DJI 大疆、Tektro 彥豪、KMC 桂盟、woom、Classified。</p>
+                        </div>
+                        <div class="p-3 rounded bg-cyber-dark/80 border border-cyber-border">
+                            <h4 class="font-bold text-amber-300 text-sm mb-1"><i class="fa-solid fa-shield-virus mr-1.5"></i>專利迴避 (FTO) & 敏捷 ECO 設變</h4>
+                            <p class="text-slate-400">開模前精準專利迴避；面對開模後突發專利即時進行工程變更 (ECO) 與模具修正，零時差避險。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Engineering & DFM -->
+                <div class="bg-cyber-card p-6 rounded-xl border border-cyber-border space-y-4">
+                    <h3 class="text-lg font-bold text-white border-b border-cyber-border pb-3 flex items-center justify-between font-tech">
+                        <span><i class="fa-solid fa-microchip text-cyber-neon mr-2"></i>硬體工程與 DFM 可製造性</span>
+                        <span class="text-xs font-mono text-cyber-neon">ENGINEERING EDGE</span>
+                    </h3>
+                    <div class="space-y-3 font-mono text-xs">
+                        <div class="p-3 rounded bg-cyber-dark/80 border border-cyber-border">
+                            <h4 class="font-bold text-cyber-neon text-sm mb-1"><i class="fa-solid fa-fire-flame-curved mr-1.5"></i>乙級熱處理技術士認證</h4>
+                            <p class="text-slate-400">精通 SAE 4130、HC340LA 鋼材碳氮共滲與淬火。治具壓平回火 (Fixture Tempering) 形變控制於 &lt;0.25mm 內。</p>
+                        </div>
+                        <div class="p-3 rounded bg-cyber-dark/80 border border-cyber-border">
+                            <h4 class="font-bold text-cyber-accent text-sm mb-1"><i class="fa-solid fa-ruler-combined mr-1.5"></i>GD&T 公差堆疊與裝配分析</h4>
+                            <p class="text-slate-400">熟練 SolidWorks/AutoCAD 3D CAD、FEA 應力模擬與 Tolerance Stack-up，圖面發套前排除干涉。</p>
+                        </div>
+                        <div class="p-3 rounded bg-cyber-dark/80 border border-cyber-border">
+                            <h4 class="font-bold text-purple-300 text-sm mb-1"><i class="fa-solid fa-bolt mr-1.5"></i>前瞻機電整合 (Mechatronics)</h4>
+                            <p class="text-slate-400">主導自發電飛輪開發，整合飛輪中空幾何、錐形感應盤、圓盤整流器與軸心棒狀電池，優先申請專利。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ecosystem Grid -->
+            <div class="bg-cyber-card p-6 rounded-xl border border-cyber-border space-y-3">
+                <h4 class="text-xs font-mono text-cyber-accent uppercase tracking-wider">GLOBAL TIER-1 ECOSYSTEM PARTNERS (產品成功導入與合作大廠)</h4>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-3 text-center font-mono">
+                    <div class="p-3 rounded bg-cyber-dark border border-cyber-border hover:border-cyber-accent transition-all">
+                        <div class="text-white font-bold text-sm">Bosch</div>
+                        <div class="text-[10px] text-slate-400">E-Bike 驅動系統</div>
+                    </div>
+                    <div class="p-3 rounded bg-cyber-dark border border-cyber-border hover:border-cyber-accent transition-all">
+                        <div class="text-white font-bold text-sm">DJI 大疆</div>
+                        <div class="text-[10px] text-slate-400">Avinox 驅動生態圈</div>
+                    </div>
+                    <div class="p-3 rounded bg-cyber-dark border border-cyber-border hover:border-cyber-accent transition-all">
+                        <div class="text-white font-bold text-sm">Tektro 彥豪</div>
+                        <div class="text-[10px] text-slate-400">TRP 套件共同銷售</div>
+                    </div>
+                    <div class="p-3 rounded bg-cyber-dark border border-cyber-border hover:border-cyber-accent transition-all">
+                        <div class="text-white font-bold text-sm">KMC 桂盟</div>
+                        <div class="text-[10px] text-slate-400">12S 公路車飛輪案</div>
+                    </div>
+                    <div class="p-3 rounded bg-cyber-dark border border-cyber-border hover:border-cyber-accent transition-all">
+                        <div class="text-white font-bold text-sm">woom</div>
+                        <div class="text-[10px] text-slate-400">奧地利童車龍頭</div>
+                    </div>
+                    <div class="p-3 rounded bg-cyber-dark border border-cyber-border hover:border-cyber-accent transition-all">
+                        <div class="text-white font-bold text-sm">Classified</div>
+                        <div class="text-[10px] text-slate-400">兩速行星齒輪花鼓</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB CONTENT 2: PROJECTS -->
+        <section id="content-projects" class="space-y-6 hidden">
+
+            <!-- Project 1 -->
+            <div class="bg-cyber-card rounded-xl border border-cyber-border p-6 neon-border-cyan space-y-4">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-cyber-border pb-3">
+                    <div>
+                        <span class="px-2.5 py-0.5 rounded text-[11px] font-mono bg-purple-500/20 text-purple-300 border border-purple-500/40 mr-2 font-bold">PROJECT 01</span>
+                        <h3 class="text-lg sm:text-xl font-bold font-tech text-white inline">E-Bike 自發電飛輪系統開發與錐形感應發電專利佈局專案</h3>
+                    </div>
+                    <span class="text-xs font-mono text-cyber-neon shrink-0">2026/01 – 至今 (進行中)</span>
+                </div>
+
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    主導前瞻「自發電卡式飛輪 (Generator Cassette)」機電整合專案。突破傳統飛輪單一機械傳動限制，精準利用多片式飛輪內部錐形中空幾何空間完成電磁感應結構配置，實現微型動能回收與自發電。
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-xs font-mono">
+                    <div class="p-3 rounded bg-cyber-dark border border-cyber-border">
+                        <div class="text-cyber-accent font-bold mb-1">錐形空腔機電整合</div>
+                        <p class="text-slate-400">匹配錐形線圈座與磁鐵座感應盤，整合圓盤整流器與電器旋轉接頭。</p>
+                    </div>
+                    <div class="p-3 rounded bg-cyber-dark border border-cyber-border">
+                        <div class="text-cyber-neon font-bold mb-1">軸心棒狀電池 & 防水</div>
+                        <p class="text-slate-400">規劃內置軸心棒狀電池，評估防塵鋁蓋與整流器罩密封公差。</p>
+                    </div>
+                    <div class="p-3 rounded bg-cyber-dark border border-cyber-border">
+                        <div class="text-amber-300 font-bold mb-1">優先權專利佈局</div>
+                        <p class="text-slate-400">擔任專利主導人，優先執行發電架構與防塵封裝專利申請。</p>
+                    </div>
+                </div>
+
+                <div class="pt-3 border-t border-cyber-border/80 flex flex-wrap gap-2 text-xs font-mono">
+                    <a href="https://docs.google.com/document/d/1w5YV5ZOW1Le4dLLxRKnDyZ0s-btJO14Y/edit?usp=drive_link" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded bg-cyber-dark text-cyber-accent border border-cyber-accent/40 hover:bg-cyber-accent/20 transition-all flex items-center gap-1.5 inline-flex">
+                        <i class="fa-solid fa-file-word text-blue-400"></i> 發電盤結構說明 Word
+                    </a>
+                    <a href="https://drive.google.com/file/d/15WMVirM01uHtcCxjc3-vy1KMb2MVfO25/view?usp=drive_link" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded bg-cyber-dark text-cyber-neon border border-cyber-neon/40 hover:bg-cyber-neon/20 transition-all flex items-center gap-1.5 inline-flex">
+                        <i class="fa-solid fa-file-pdf text-red-400"></i> 錐形發電盤圖面 PDF
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="bg-cyber-card rounded-xl border border-cyber-border p-6 neon-border-cyan space-y-4">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-cyber-border pb-3">
+                    <div>
+                        <span class="px-2.5 py-0.5 rounded text-[11px] font-mono bg-cyber-accent/20 text-cyber-accent border border-cyber-accent/40 mr-2 font-bold">PROJECT 02</span>
+                        <h3 class="text-lg sm:text-xl font-bold font-tech text-white inline">全系列卡式飛輪技術矩陣、專利風控與 Tier-1 供應鏈導入案</h3>
+                    </div>
+                    <span class="text-xs font-mono text-cyber-neon shrink-0">2019/01 – 至今 (進行中)</span>
+                </div>
+
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    主導卡式飛輪全系列世代演進與 NPI 開發。涵蓋普及型 Shimano HG、高扭力 E-Bike 防護 (LG/CUES)、競賽級極速變速 (HG+ 12S)、高端一體式 Co-Design 及 12S 公路車綿密齒比。
+                </p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 text-xs font-mono">
+                    <div class="p-3 rounded bg-cyber-dark border border-cyber-border">
+                        <div class="text-cyber-accent font-bold mb-1">1. Shimano HG & LG/CUES E-Bike 飛輪</div>
+                        <p class="text-slate-400">HG 幾何上鏈 100%/下鏈 80% 成功率。CUES/LG 面對 Shimano 突發專利即時 ECO 改模避險，量產 8 款飛輪打入 Bosch 與 DJI 生態圈。</p>
+                    </div>
+                    <div class="p-3 rounded bg-cyber-dark border border-cyber-border">
+                        <div class="text-cyber-neon font-bold mb-1">2. HG+ 12S & Co-Design / 公路車案</div>
+                        <p class="text-slate-400">對標 HG+ 設計 11-52T / 11-45T 雙向極速飛輪。交付 Tektro / Classified 一體飛輪。接受 KMC 桂盟邀請完成 12S 11-34T 設計。</p>
+                    </div>
+                </div>
+
+                <!-- Verified External Hyperlink Buttons -->
+                <div class="pt-3 border-t border-cyber-border/80 space-y-2">
+                    <div class="text-xs font-mono text-slate-400"><i class="fa-solid fa-paperclip text-cyber-accent mr-1"></i> 【實體超連結與多媒體檔案 (Attachments & Media Links)】</div>
+                    <div class="flex flex-wrap gap-2 text-xs font-mono">
+                        <a href="https://www.geardrivetech.com/gm11?lang=zh" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded bg-cyber-dark text-cyber-accent border border-cyber-accent/40 hover:bg-cyber-accent/20 transition-all flex items-center gap-1.5 inline-flex">
+                            <i class="fa-brands fa-youtube text-red-500"></i> HG 設計介紹影片
+                        </a>
+                        <a href="https://www.showdaily.net/2022/03/more-electronics-fewer-cables/" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded bg-cyber-dark text-slate-200 border border-cyber-border hover:border-cyber-accent transition-all flex items-center gap-1.5 inline-flex">
+                            <i class="fa-solid fa-newspaper text-blue-400"></i> HG 相關報導
+                        </a>
+                        <a href="https://tektro.com/zh-Hant/news/39" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded bg-cyber-dark text-slate-200 border border-cyber-border hover:border-cyber-accent transition-all flex items-center gap-1.5 inline-flex">
+                            <i class="fa-solid fa-file-pdf text-amber-400"></i> 一體式相關資料
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=kp6ckubRaLk" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded bg-cyber-dark text-cyber-accent border border-cyber-accent/40 hover:bg-cyber-accent/20 transition-all flex items-center gap-1.5 inline-flex">
+                            <i class="fa-brands fa-youtube text-red-500"></i> 一體式介紹影片
+                        </a>
+                        <a href="https://www.kmcchain.com/tw/series/cassette" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded bg-cyber-dark text-slate-200 border border-cyber-border hover:border-cyber-accent transition-all flex items-center gap-1.5 inline-flex">
+                            <i class="fa-solid fa-file-lines text-emerald-400"></i> LG / CUES 相關資料
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=7366qE1aLxs" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded bg-cyber-dark text-cyber-accent border border-cyber-accent/40 hover:bg-cyber-accent/20 transition-all flex items-center gap-1.5 inline-flex">
+                            <i class="fa-brands fa-youtube text-red-500"></i> LG 產品介紹影片
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="bg-cyber-card rounded-xl border border-cyber-border p-6 neon-border-cyan space-y-4">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-cyber-border pb-3">
+                    <div>
+                        <span class="px-2.5 py-0.5 rounded text-[11px] font-mono bg-cyber-neon/20 text-cyber-neon border border-cyber-neon/40 mr-2 font-bold">PROJECT 03</span>
+                        <h3 class="text-lg sm:text-xl font-bold font-tech text-white inline">E-Bike 高階皮帶傳動系統 (CDRIVE 5M/8M/11M) 開發案</h3>
+                    </div>
+                    <span class="text-xs font-mono text-cyber-neon shrink-0">2016/10 – 至今 (進行中)</span>
+                </div>
+
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    對標 Gates 自主建立 CDRIVE 2025-2026 全系列皮帶傳動型錄。5M 微型化傳動模組成功減重 32%；通過 ISO 4210-14 拉伸試驗 (拉伸力 2,458.6kgf，超越國際標準 53.7%)。量產導入 Cool Mobility、STRIDA 永祺，與 woom 推進 NPI 合作。
+                </p>
+
+                <div class="pt-2 border-t border-cyber-border/60 flex flex-wrap gap-2 text-xs font-mono">
+                    <a href="https://www.youtube.com/watch?v=8sfR1xWL-_0" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded bg-cyber-dark text-cyber-accent border border-cyber-accent/40 hover:bg-cyber-accent/20 transition-all flex items-center gap-1.5 inline-flex">
+                        <i class="fa-brands fa-youtube text-red-500"></i> CDRIVE 介紹影片
+                    </a>
+                    <a href="https://www.cycledrive.com/index.php?/cdrive" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded bg-cyber-dark text-slate-200 border border-cyber-border hover:border-cyber-accent transition-all flex items-center gap-1.5 inline-flex">
+                        <i class="fa-solid fa-book-open text-cyber-neon"></i> CDRIVE 2025-2026 官方型錄
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="bg-cyber-card rounded-xl border border-cyber-border p-6 neon-border-cyan space-y-4">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-cyber-border pb-3">
+                    <div>
+                        <span class="px-2.5 py-0.5 rounded text-[11px] font-mono bg-amber-500/20 text-amber-300 border border-amber-500/40 mr-2 font-bold">PROJECT 04</span>
+                        <h3 class="text-lg sm:text-xl font-bold font-tech text-white inline">人因力學偏心/橢圓前齒盤開發、專利申請與台大產學合作案</h3>
+                    </div>
+                    <span class="text-xs font-mono text-cyber-neon shrink-0">2017/10 – 2019/12</span>
+                </div>
+
+                <p class="text-sm text-slate-300 leading-relaxed">
+                    主導偏心齒盤與曲柄對應旋轉慣性物理研究，並提交台灣、中國、美國、歐盟、德國、西班牙、義大利 7 國發明專利申請。2019 年 2 月代表公司對接國立臺灣大學執行《下肢踩踏生物力學》前瞻專案，整合 sEMG 肌電圖成功消除踩踏死角。
+                </p>
+
+                <div class="pt-2 border-t border-cyber-border/60 flex flex-wrap gap-2 text-xs font-mono">
+                    <a href="https://www.facebook.com/reel/292188878565336/" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded bg-cyber-dark text-cyber-accent border border-cyber-accent/40 hover:bg-cyber-accent/20 transition-all flex items-center gap-1.5 inline-flex">
+                        <i class="fa-brands fa-facebook text-blue-500"></i> 偏心盤簡介與測試影片
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB CONTENT 3: PATENTS MATRIX -->
+        <section id="content-patents" class="space-y-6 hidden">
+            <!-- Filter Bar with PPT Presentation Link & Google Drive Folder Link -->
+            <div class="bg-cyber-card p-4 rounded-xl border border-cyber-border space-y-3">
+                <div class="flex items-center justify-between flex-wrap gap-2">
+                    <h2 class="text-base sm:text-lg font-bold text-cyber-accent flex items-center gap-2 font-tech">
+                        <i class="fa-solid fa-shield-halved"></i> 跨國智財專利護城河矩陣 (GLOBAL PATENT PORTFOLIO MATRIX)
+                    </h2>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <!-- Google Drive Folder Button -->
+                        <a href="https://drive.google.com/drive/folders/1RzWvHRdzF6ap6qAO5Hzi6zs6z55gvA_h?usp=drive_link" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="px-3 py-1.5 rounded bg-cyber-dark text-cyber-accent border border-cyber-accent/40 hover:bg-cyber-accent/20 hover:border-cyber-accent transition-all flex items-center gap-1.5 text-xs font-mono shadow-[0_0_10px_rgba(0,243,255,0.2)]">
+                            <i class="fa-solid fa-folder-open text-amber-400"></i> 查看專利雲端資料夾 <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        </a>
+                        <!-- PPT Presentation Button -->
+                        <a href="https://docs.google.com/presentation/d/1UL-N1EunhriN2XMBiWqgt9f2OuYVJiyj/edit?usp=drive_link&ouid=103203328822031636950&rtpof=true&sd=true" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="px-3 py-1.5 rounded bg-cyber-dark text-cyber-neon border border-cyber-neon/40 hover:bg-cyber-neon/20 hover:border-cyber-neon transition-all flex items-center gap-1.5 text-xs font-mono shadow-[0_0_10px_rgba(0,255,136,0.2)]">
+                            <i class="fa-solid fa-file-powerpoint text-yellow-400"></i> 查看專利簡報 (PPT) <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spreadsheet Access Card -->
+            <div class="bg-cyber-card rounded-xl border border-cyber-border p-6 space-y-4 neon-border-cyan">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-cyber-border pb-4">
+                    <div class="space-y-1">
+                        <h3 class="text-lg font-bold text-white font-tech flex items-center gap-2">
+                            <i class="fa-solid fa-file-excel text-emerald-400"></i> 全球 7 國專利清單與案號明細試算表 (Google Sheets)
+                        </h3>
+                        <p class="text-xs font-mono text-slate-400">
+                            收錄完整 20+ 案跨國專利（台灣、中國、美國、歐盟、德國、西班牙、義大利）申請案號與分類明細。
+                        </p>
+                    </div>
+                    <a href="https://docs.google.com/spreadsheets/d/1Nk9Q4S6EBWX6XFyT1V1yTgWwrvYN6A6a/edit?usp=drive_link&ouid=103203328822031636950&rtpof=true&sd=true" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="px-4 py-2 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/50 hover:bg-emerald-500/30 transition-all font-mono text-xs font-bold flex items-center gap-2 shrink-0">
+                        <i class="fa-solid fa-external-link-alt"></i>在新分頁開啟 Google 試算表
+                    </a>
+                </div>
+
+                <!-- Clean Summary Table -->
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-xs border-collapse font-mono">
+                        <thead>
+                            <tr class="border-b border-cyber-border text-slate-400">
+                                <th class="p-3">專利類別</th>
+                                <th class="p-3">專利名稱 / 案件名稱</th>
+                                <th class="p-3">涵蓋國家 / 區域</th>
+                                <th class="p-3">代表申請案號</th>
+                                <th class="p-3">狀態與歸檔備註</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-cyber-border/40">
+                            <tr class="hover:bg-cyber-dark/60">
+                                <td class="p-3.5"><span class="px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 border border-purple-500/40 font-bold text-xs">前瞻發電</span></td>
+                                <td class="p-3.5 font-bold text-white">自發電花鼓 / 錐形發電飛輪</td>
+                                <td class="p-3.5 text-amber-300">台灣 (優先權申請中)</td>
+                                <td class="p-3.5 text-slate-300">2026 發電專利案號整理中</td>
+                                <td class="p-3.5 text-slate-300">已納入雲端專利總檔案庫</td>
+                            </tr>
+                            <tr class="hover:bg-cyber-dark/60">
+                                <td class="p-3.5"><span class="px-2 py-0.5 rounded bg-blue-500/20 text-blue-300 border border-blue-500/40 font-bold text-xs">皮帶傳動</span></td>
+                                <td class="p-3.5 font-bold text-white">導向齒盤結構 (共 5 案)</td>
+                                <td class="p-3.5 text-slate-300">台灣 / 中國 / 美國</td>
+                                <td class="p-3.5 text-slate-300">TW 106128375 / US 15/699,128</td>
+                                <td class="p-3.5 text-slate-300">已歸檔 (涵蓋5國/區專利)</td>
+                            </tr>
+                            <tr class="hover:bg-cyber-dark/60">
+                                <td class="p-3.5"><span class="px-2 py-0.5 rounded bg-blue-500/20 text-blue-300 border border-blue-500/40 font-bold text-xs">皮帶傳動</span></td>
+                                <td class="p-3.5 font-bold text-white">曲柄齒盤組件及驅動機構</td>
+                                <td class="p-3.5 text-slate-300">台灣 / 中國</td>
+                                <td class="p-3.5 text-slate-300">TW 110100338 / CN 202120090048.1</td>
+                                <td class="p-3.5 text-slate-300">已歸檔 (完整官方證書)</td>
+                            </tr>
+                            <tr class="hover:bg-cyber-dark/60">
+                                <td class="p-3.5"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold text-xs">偏心人因</span></td>
+                                <td class="p-3.5 font-bold text-white">自行車偏心齒盤與曲柄組合</td>
+                                <td class="p-3.5 text-emerald-300">台灣 / 中國 / 美國 / 歐盟 / 德國 / 西班牙 / 義大利</td>
+                                <td class="p-3.5 text-slate-300">US 15/616,464 / EP 17201560.4</td>
+                                <td class="p-3.5 text-slate-300">已歸檔 (7國國際發明專利)</td>
+                            </tr>
+                            <tr class="hover:bg-cyber-dark/60">
+                                <td class="p-3.5"><span class="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-bold text-xs">偏心人因</span></td>
+                                <td class="p-3.5 font-bold text-white">自行車曲柄齒環組 & 可調曲柄</td>
+                                <td class="p-3.5 text-emerald-300">台灣 / 中國 / 美國 / 歐盟 / 德國 / 西班牙 / 義大利</td>
+                                <td class="p-3.5 text-slate-300">US 15/616,468 / EP 17201564.6</td>
+                                <td class="p-3.5 text-slate-300">已歸檔 (7國國際發明專利)</td>
+                            </tr>
+                            <tr class="hover:bg-cyber-dark/60">
+                                <td class="p-3.5"><span class="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 border border-amber-500/40 font-bold text-xs">飛輪功性能</span></td>
+                                <td class="p-3.5 font-bold text-white">自行車齒盤升檔結構之改良 & 鎖固結構</td>
+                                <td class="p-3.5 text-slate-300">台灣 / 中國</td>
+                                <td class="p-3.5 text-slate-300">TW M661099 / TW 113108069</td>
+                                <td class="p-3.5 text-slate-300">已歸檔 (實體量產專利)</td>
+                            </tr>
+                            <tr class="hover:bg-cyber-dark/60">
+                                <td class="p-3.5"><span class="px-2 py-0.5 rounded bg-cyan-500/20 text-cyan-300 border border-cyan-500/40 font-bold text-xs">飛輪結構外觀</span></td>
+                                <td class="p-3.5 font-bold text-white">飛輪組合結構 & 浮動後齒盤 (13案)</td>
+                                <td class="p-3.5 text-slate-300">台灣 / 中國 / 美國</td>
+                                <td class="p-3.5 text-slate-300">TW 108137388 / TW 110140715</td>
+                                <td class="p-3.5 text-slate-300">已歸檔 (系列共13案)</td>
+                            </tr>
+                            <tr class="hover:bg-cyber-dark/60">
+                                <td class="p-3.5"><span class="px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 border border-rose-500/40 font-bold text-xs">花鼓與變速</span></td>
+                                <td class="p-3.5 font-bold text-white">具棘輪機構反向配置之後花鼓</td>
+                                <td class="p-3.5 text-slate-300">台灣 / 中國 / 美國 / 歐盟</td>
+                                <td class="p-3.5 text-slate-300">US 16/533,428 / EP 19202884.7</td>
+                                <td class="p-3.5 text-slate-300">已歸檔 (跨國發明專利)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAB CONTENT 4: AUTOBIOGRAPHY & REALTEK FIT -->
+        <section id="content-autobio" class="space-y-6 hidden">
+            <!-- Target Banner -->
+            <div class="bg-gradient-to-r from-cyber-card via-cyber-dark to-cyber-card p-6 rounded-xl border border-cyber-accent/40 text-center space-y-3">
+                <span class="px-3 py-1 rounded text-xs font-mono bg-cyber-accent/10 text-cyber-accent border border-cyber-accent/40 font-bold">
+                    TARGETING REALTEK TPM / PM ROLE
+                </span>
+                <h3 class="text-xl font-bold font-tech text-white">為瑞昱 (Realtek) 打造的硬核技術產品管理即戰力</h3>
+                <p class="text-sm text-slate-300 max-w-3xl mx-auto">
+                    隨著 IC 設計與半導體終端產品高度依賴嚴謹的系統載具與機構品質。我具備將高階硬體技術轉化為商業專案里程碑的實戰驗證實力。
+                </p>
+                <div class="text-base font-extrabold text-cyber-accent font-mono pt-1">
+                    「講得懂工程語言、看得懂硬體風險、做得出時程交付。」
+                </div>
+            </div>
+
+            <!-- Full Autobiography Text Card -->
+            <div class="bg-cyber-card p-6 sm:p-8 rounded-xl border border-cyber-border space-y-6 text-sm text-slate-300 leading-relaxed font-sans">
+                <div>
+                    <h4 class="text-base font-bold text-white border-b border-cyber-border pb-2 mb-3 flex items-center font-tech">
+                        <i class="fa-solid fa-user-gear text-cyber-accent mr-2"></i> 個人背景與重大專案責任
+                    </h4>
+                    <p>
+                        我是姚權庭，畢業於南台科技大學機械工程系，並於 2015 年考取國立中興大學機械工程研究所在職專班。後因在職場承接公司核心傳動系統開發與跨國外包供應鏈整合重任，為確保重大專案按時交付與量產品質，選擇全心投入專案營運與產品架構設計。
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-base font-bold text-white border-b border-cyber-border pb-2 mb-3 flex items-center font-tech">
+                        <i class="fa-solid fa-briefcase text-cyber-neon mr-2"></i> 現任技術經理核心資歷
+                    </h4>
+                    <p>
+                        現任傳誠技研有限公司（DTS）技術經理，職涯專注於高階傳動系統、精密金屬加工（連續沖壓、CNC、鍛造）與高階熱處理工藝之開發與專案管理。我擅長將複雜的硬體技術轉化為標準化的工程規格與專案里程碑（Milestones），並運用 DFMEA / PFMEA 進行前端風險預防，具備跨部門溝通、外包供應鏈管理與 NPI 從試作至量產之全流程控管實力。
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="text-base font-bold text-white border-b border-cyber-border pb-2 mb-3 flex items-center font-tech">
+                        <i class="fa-solid fa-list-check text-cyber-gold mr-2"></i> 核心專業與實務專案績效 Summary
+                    </h4>
+                    <div class="space-y-3 font-mono text-xs pl-3 border-l-2 border-cyber-accent">
+                        <div>
+                            <strong class="text-white">1. 跨系統整合與規格定義：</strong> 主導 5M/8M/11M 皮帶齒型與 11-52T 飛輪，完成 Bosch、Bafang、Mivice 電機與內變速花鼓介面客製化對正。
+                        </div>
+                        <div>
+                            <strong class="text-white">2. DFM 可製造性與熱處理控制：</strong> 持乙級熱處理技術士認證，精通碳氮共滲與淬火，透過治具壓平回火將熱處理形變嚴格控制於 0.25mm 內。
+                        </div>
+                        <div>
+                            <strong class="text-white">3. 品質風險預防與 NPI 控管：</strong> 主導 DFMEA/PFMEA 評估，建構關鍵尺寸 SPC (Cpk/Ppk) 統計管制，橫向整合 R&D、模具廠與品保縮短試模週期。
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-base font-bold text-white border-b border-cyber-border pb-2 mb-3 flex items-center font-tech">
+                        <i class="fa-solid fa-bullseye text-purple-400 mr-2"></i> 職涯目標與未來展望
+                    </h4>
+                    <p>
+                        半導體與高階硬體系統整合皆高度依賴嚴謹的機構品質與專利壁壘。我期望能將這套高階硬體整合、供應鏈協調與 quality-first 的 NPI 專案管理經驗，帶入貴公司 TPM / PM 團隊，協助產品精準推進並順利量產。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-6 right-6 bg-cyber-accent text-cyber-black font-bold px-4 py-3 rounded-lg shadow-2xl font-mono text-xs hidden flex items-center space-x-2 transition-all z-50">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toast-msg">已成功複製 104 / ATS 純文字履歷至剪貼簿！</span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-cyber-dark border-t border-cyber-border py-6 text-center text-xs font-mono text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 space-y-2">
+            <p>© 2026 姚權庭 (Weiss Yao) - Technical Product Manager (TPM) Application for Realtek</p>
+            <p class="text-[10px] text-slate-600">Cyberpunk Dark Tech Style • Single-Page Interactive HTML Resume</p>
+        </div>
+    </footer>
+
+    <!-- JS Logic -->
+    <script>
+        // Tab Switcher
+        function switchTab(tabId) {
+            const contents = ['summary', 'projects', 'patents', 'autobio'];
+            contents.forEach(id => {
+                document.getElementById(`content-${id}`).classList.add('hidden');
+                document.getElementById(`tab-${id}`).classList.remove('active');
+            });
+
+            document.getElementById(`content-${tabId}`).classList.remove('hidden');
+            document.getElementById(`tab-${tabId}`).classList.add('active');
+        }
+
+        // Copy Plain Resume Text Function
+        function copyPlainResumeText() {
+            const textToCopy = `姚權庭 (Weiss Yao) | 技術產品經理 (TPM) / 產品經理 (PM)
+手機：0982-091-210 | Email：lookstarwish@gmail.com | 地點：台中市南區
+學歷：國立中興大學 機械工程學系碩士肄業 / 南台科技大學 機械系畢業
+目前職務：傳誠技研有限公司 (DTS) - 技術經理 (14-15年經驗)
+
+【核心優勢 Executive Summary】
+- 14+ 年傳動研發與 NPI 專案管理：主導產品從 Concept 定義、沖壓/CNC 開模、專利 ECO 風控至 SOP 批量量產。
+- 頂級跨國 Tier-1 生態圈對接：產品成功打入 Bosch、DJI 大疆、Tektro 彥豪、KMC 桂盟、woom、Classified 國際大廠體系。
+- 全球 7 國智財專利護城河：成功申請與佈局 20+ 案跨國專利（TW/CN/US/EU/DE/ES/IT），並主導台大下肢生物力學產學合作。
+- 硬核品質工程與熱處理防護：持有乙級熱處理技術士認證，精通 DFM、GD&T、DFMEA/PFMEA 及 0.25mm 熱處理形變精準控制。
+
+【4 大重點專案成就】
+1. E-Bike 自發電飛輪系統與錐形感應發電專利案 (2026/01 進行中)：利用飛輪中空幾何整合錐形線圈座/磁鐵座感應盤、圓盤整流器與軸心棒狀電池，優先執行發電與防塵封裝專利申請。
+2. 全系列卡式飛輪技術矩陣與 Tier-1 導入案：對標 Shimano HG/LG(CUES)/HG+ 12S，應對 Shimano 突發專利即時 ECO 改模成功避險，打入 Bosch 與 DJI 大疆生態圈；受 Tektro 邀請主導 Classified 兩速行星花鼓一體飛輪交付；完成 KMC 12S 11-34T 公路車飛輪設計結案。
+3. E-Bike 高階皮帶傳動系統 (CDRIVE 5M/8M/11M)：對標 Gates 自主建立產品矩陣，量產導入 Cool Mobility、STRIDA，推進 woom NPI 合作；5M 模组減重 32%；通過 ISO 4210-14 拉伸力達 2,458.6kgf (超越標準 53.7%)。
+4. 人因力學偏心/橢圓前齒盤與台大產學合作案：申請台/中/美/歐/德/西/意 7 國發明專利；代表公司與國立臺灣大學合作《下肢踩踏生物力學》專案，結合 sEMG 肌電圖消除踩踏死角。
+
+【核心職涯宣言】
+「講得懂工程語言、看得懂硬體風險、做得出時程交付。」
+期望將高階硬體整合、跨國 Tier-1 供應鏈協調與 quality-first 的 NPI 專案管理經驗帶入貴公司 TPM / PM 團隊，協助產品精準推進並順利量產。`;
+
+            if (navigator.clipboard && window.isSecureContext) {
+                navigator.clipboard.writeText(textToCopy).then(showToast);
+            } else {
+                const textArea = document.createElement("textarea");
+                textArea.value = textToCopy;
+                textArea.style.position = "fixed";
+                document.body.appendChild(textArea);
+                textArea.focus();
+                textArea.select();
+                try {
+                    document.execCommand('copy');
+                    showToast();
+                } catch (err) {
+                    console.error('Copy failed', err);
+                }
+                document.body.removeChild(textArea);
+            }
+        }
+
+        function showToast() {
+            const toast = document.getElementById('toast');
+            toast.classList.remove('hidden');
+            setTimeout(() => {
+                toast.classList.add('hidden');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
